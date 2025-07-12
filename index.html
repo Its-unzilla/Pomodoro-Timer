@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f550.png" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div id="timer-display" class="timer-display">
+      25:00
+    </div>
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn" disabled>Pause</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+    <div class="session-info">
+      <p>Session Type: <span id="session-type">Work</span></p>
+      <p>Completed Pomodoros: <span id="session-count">0</span></p>
+    </div>
+  </div>
+  <!-- <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio> -->
+   <audio id="alarm-sound" src="notification.mp3" preload="auto"></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
